@@ -90,7 +90,7 @@ var TodoItem = React.createClass({
   },
 
   _onDestroyClick: function() {
-    todos.destroy(this.props.todo.id);
+    todos.destroy(this.props.todo.get('id'));
   }
 
 });

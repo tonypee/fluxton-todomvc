@@ -63,15 +63,14 @@ class Todos extends EventEmitter {
   }
 
   areAllComplete() {
-    var todos = this.store.getValue();
-    var complete = todos.filter(todo => !todo.get('complete')).size;
-    return complete < todos.size;
+    return this.store.getValue().size == this.numCompleted();
   }
 
   numCompleted() {
     var todos = this.store.getValue();
-    var num = todos.filter(todo => todo.get('complete'));
-    return num.size;
+    return todos.filter(todo => {
+      return todo.get('complete')
+    }).size;
   }
 }
 
