@@ -1,16 +1,13 @@
 # Fluxton TodoMVC Example
 
-> An application architecture for React utilizing a unidirectional data flow.
-
-This is what a running Flux TodoMVC example looks like:
-<img src="screenshot.png" style="width: 100%;" />
-
+A copy of [flux-todomvc](https://github.com/facebook/flux/tree/master/examples/flux-todomvc) using [Fluxton](https://github.com/tonypee/fluxton)
 
 ## Overview
 
-A copy of [flux-todomvc](https://github.com/facebook/flux/tree/master/examples/flux-todomvc) using fluxton.
-
 Fluxton forces a store to only have a single immutatble value, and a single action. This means that a 'change' can be generated and pass through the flux Dispatcher with less boilerplate. Stores can still listen for eachother and 'waitFor' the change actions of other stores if needed (no in this simple example).
+
+This is what a running Flux TodoMVC example looks like:
+<img src="screenshot.png" style="width: 100%;" />
 
 ## TodoMVC Example Implementation
 
